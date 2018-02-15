@@ -1,0 +1,23 @@
+{
+    "name": "ninejkh/datapipeline2cfn",
+    "description": "AWS data pipeline to cloudformation converter.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "9JKH (Pty) Ltd.",
+            "email": "hello@9jkh.co.za"
+        }
+    ],
+    "require": {
+        "symfony/console": "^4.0",
+        "symfony/yaml": "^4.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
