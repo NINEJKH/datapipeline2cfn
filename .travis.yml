@@ -9,3 +9,13 @@ matrix:
 sudo: false
 
 script: "./build.sh"
+
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: QHVaT0IES0Z7ADdry802lSqC0UiQzBuzYiRYPfDfL05Y9yFyYQlNBLqN7hZOPf+pKP19pfpKv79tj5muIXqgTxYicwbNhSUoVBGzGemkyngcgAsz9IG3gWNUjLQ5SfoD/tqmqi7zGHS1714d0Cj8reRGRJGI1Tk2dGTkPNxUUdWe/K0Sj1ZLuEXbt3UXEpQKL1tUBGHbNlNd3CwSi1Fk44obKtmmzfEvPZPVkqF2XiBo9SuvmLOH8nkqINLZYkpkptm3jSA9hKz/G/hdiUFtu/rMEaBR0qcPh92keOWRGRtdSBidjyrqkgkNBuGeIDy57F2r12rpVmR6VxEhkGYHegOUyhhnARDeoIrBBx01n+JUJxebCpWPCzVbluxvQXelEyCIm6kzYdfRluDJ7kOB0l4N1AqiLzk8zM+YzWMY2MXVfegCvDbf6SQYBGH+Q0pCzMloqQwKktgvwRbNGhWCinys/4raFWEXKzRrJ+ZYsVsYb+2etDnWi6GUfPwuG3Z8ZDHxqgQDU18oiZI1ZkzqkxOgQSwjjbfe4Qyhy5d//c/oBjWGgxddy4Js3MAJ1817NLwtWtgIyPZ/Xh319ym66V/XSMQtGj6xJSJrHw3TO/xpKEA28XcHdKs9O1gVdtwHriYX0QxpfEKjd4CZYnLtKwoPb9bi2d4XnUdNibOqh94=
+  file: datapipeline2cfn.phar
+  on:
+    tags: true
+    condition: $DEPLOY = true
