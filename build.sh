@@ -25,7 +25,7 @@ composer install \
   --verbose
 
 # run tests
-if ! vendor/bin/phpunit; then
+if [[ -f vendor/bin/phpunit ]] && ! vendor/bin/phpunit; then
   exit 1
 fi
 
