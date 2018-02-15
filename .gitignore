@@ -1,0 +1,10 @@
+/.buildpath
+/.project
+/.settings/
+
+/test.php
+/version.txt
+/datapipeline2cfn.phar
+/dataPipeline.txt
+
+/vendor/
